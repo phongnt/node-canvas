@@ -39,8 +39,8 @@ jobs:
   Linux:
     strategy:
       matrix:
-        node: [10,12,14]
-        canvas_tag: ["v2.8.2"] # e.g. "v2.6.1"
+        node: [] # e.g. 10,12,14
+        canvas_tag: [] # e.g. "v2.6.1"
     name: ${{ matrix.canvas_tag}}, Node.js ${{ matrix.node }}, Linux
     runs-on: ubuntu-latest
     container:
@@ -132,7 +132,7 @@ jobs:
     strategy:
       matrix:
         node: [10, 12, 14]
-        canvas_tag: ["v2.8.1"] # e.g. "v2.6.1"
+        canvas_tag: ["v2.8.2"] # e.g. "v2.6.1"
     name: ${{ matrix.canvas_tag}}, Node.js ${{ matrix.node }}, macOS
     runs-on: macos-latest
     env:
