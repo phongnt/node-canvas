@@ -7,6 +7,8 @@ FILENAME=$(
   "
 ).tar.gz;
 
+echo $FILENAME
+
 # Zip up the release
 tar -C build -czvf $FILENAME Release
 
